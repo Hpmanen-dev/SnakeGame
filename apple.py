@@ -6,8 +6,8 @@ class Apple:
         self.apple = Turtle("square")
         self.apple.color("Red")
         self.apple.penup()
-        self.apple.goto(20, 20)
         self.apple.speed('fastest')
+        self.apple.goto(20, 20)
     
     def collide(self):
         new_x = random.randint(-300, 300)
