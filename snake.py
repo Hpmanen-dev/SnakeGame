@@ -10,6 +10,7 @@ class Snake:
     def __init__(self):
         self.body = [Turtle("square")]
         self.head = self.body[0]
+        self.head.speed('fastest')
         self.head.penup()
         self.pos = self.head.pos()
     

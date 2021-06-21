@@ -32,6 +32,12 @@ while active:
     if Body.head.ycor() > 300 or Body.head.ycor() < -300:
         print("Game Over!")
         break
+    not_head = Body.body[1:]
+    for part in not_head:
+        if Body.head.distance(part) < 10:
+            print("Game Over!")
+            active = False
+            break
     Body.move()
     if Body.head.distance(apple.apple) < 19:
         apple.collide()
